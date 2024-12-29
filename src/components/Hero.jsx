@@ -17,22 +17,22 @@ const Hero = () => {
         </div>
       </div> 
     
-      <div className='w-full h-full relative -left-2 top-16'>
+      <div className='w-full h-full relative -left-2  max-xs2:-top-4 top-5'>
          <ComputersCanvas />
       </div> 
-      <div className='relative top-0  max-xs:-bottom-5 -bottom-7 w-full flex justify-center items-center'>
+      <div className='relative max-xs2:-top-24 top-0  max-xs:-bottom-5 -bottom-7 w-full flex justify-center items-center'>
         <a href="#about">
-          <div className='max-xs:w-[13px] max-xs:h-[32px] w-[25px] h-[44px]  rounded-3xl max-xs:border-2 border-4 border-secondary flex justify-center items-start '>
+          <div className='max-xs2:w-[18px] max-xs:h-[38px] w-[25px] h-[44px]  rounded-3xl max-xs:border-2 border-4 border-secondary flex justify-center items-start '>
              <motion.div
               animate={{
                 y:[0,24,0]
               }}
               transition={{
-                duration:1.5,
+                duration:2,
                 repeat:Infinity,
                 repeatType:'loop'
               }}
-              className="max-xs:w-1.5 w-3 max-xs:h-1.5 h-3 rounded-full  bg-secondary"
+              className="max-xs2:w-2 w-3 max-xs2:h-2 h-3 rounded-full  bg-secondary"
               />
           </div>
         </a>
