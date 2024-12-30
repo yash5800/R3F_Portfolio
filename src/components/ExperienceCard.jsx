@@ -1,9 +1,7 @@
 /* eslint-disable react/prop-types */
-import React from 'react'
-import { VerticalTimeline,VerticalTimelineElement } from "react-vertical-timeline-component"
-import {motion} from 'framer-motion'
+import { VerticalTimelineElement } from "react-vertical-timeline-component"
 import 'react-vertical-timeline-component/style.min.css'
-import { li, p } from 'framer-motion/client'
+
 
 const ExperienceCard = ({experience}) => {
   return (
@@ -22,24 +20,34 @@ const ExperienceCard = ({experience}) => {
         </div>
        }
      >
-       <div>
-         <h3 className='text-white text-[24px] font-bold'>{experience.title}</h3>
-       </div>
+      <div></div>
+       <h3 className='text-white text-[24px] font-bold'>{experience.title}</h3>
+
        <ul className='mt-5 list-disc ml-5 space-y-2 pb-3'>
          {experience.points.map((point,index)=>(
             <li
-             key={`experience-point-${index}`}
+             key={index}
              className='text-white-100 text-[14px] pl-1 tracking-wider'
             >
               {point}
             </li>
          ))}
        </ul>
+
        <p className='text-secondary text-[16px] font-semibold'>Languages used</p>
         <div className='flex flex-row flex-wrap gap-1 py-4'>
            {experience.languages.map((language,index)=>(
-              <p key={index} className='p-2 bg-slate-900 hover:text-gray-500 text-white rounded-md'>{language}</p>
+              <p key={`lag-${index}`} className='p-2 bg-slate-900 hover:text-gray-500 text-white rounded-md'>{language}</p>
            ))}
+        </div>
+        <div className='pt-2 pb-3'>
+        {experience.link&&
+          <a 
+          href={experience.link} 
+          target='_blank'
+          className='text-secondary hover:text-white-100 hover:bg-slate-900 bg-slate-800 rounded-md py-2 text-[14px] px-3.5'>
+            {"checkout ->"}</a>
+        }
         </div>
      </VerticalTimelineElement>
   )

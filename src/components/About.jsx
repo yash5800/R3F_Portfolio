@@ -9,7 +9,9 @@ import ServiceCard from './ServiceCard'
 const About = () => {
   return (
     <div>
-      <motion.div variants={textVariant()}>
+      <motion.div
+      variants={textVariant()}
+      >
          <p className={styles.sectionSubText}>Introduction</p>
          <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
