@@ -15,15 +15,16 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
   carrent,
   jobit,
   tripguide,
   threejs,
 } from "../assets";
+
+import ND from "/nd.png"
+import NIKE from "/nike.png"
+import WEATHER from "/weather.webp"
+import NEXT from "/next.ico"
 
 export const navLinks = [
   {
@@ -46,7 +47,7 @@ const services = [
     icon: web,
   },
   {
-    title: "Learning React Native",
+    title: "Quick Learner",
     icon: mobile,
   },
   {
@@ -116,55 +117,55 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Next Dimension",
+    languages: ["Node.js","Flask","JavaScript","CSS","HTML"],
+    icon: ND,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "April 2024 - May 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+          "Created a simple yet efficient notepad application that allows users to write, save, and manage their notes directly within the platform.",
+          "Implemented a feature to send notes via email, leveraging Flask for backend services to enhance user convenience.",
+          "Built with a combination of Node.js and Flask to demonstrate versatility in handling both frontend and backend development.",
+          "Designed a clean and user-friendly interface using HTML, CSS, and JavaScript, ensuring smooth and responsive user interactions.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Nike Clone",
+    languages: ['React.js','Tailwind CSS'],
+    icon: NIKE,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "Oct 2024 - Oct 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Replicated the sleek and modern interface of Nike's website using React.js and Tailwind CSS, focusing on responsive design and user experience.",
+      "Ensured pixel-perfect responsiveness across all screen sizes, showcasing expertise in building mobile-first designs with Tailwind CSS.",
+      'Demonstrated proficiency in React.js for creating dynamic and interactive user interfaces.',
+
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "Weather Forecasting",
+    languages: ['React.js','Tailwind CSS','Express.js','tomorrow.io API'],
+    icon: WEATHER,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "Oct 2024 - Nov 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+        'Developed a weather forecasting application using Tomorrow.io API, delivering accurate and real-time weather data for users.',
+        'Built with React.js and Express.js, demonstrating a strong understanding of both front-end and back-end development for seamless user experiences.',
+        'Designed a modern and intuitive interface with Tailwind CSS, ensuring a fully responsive application across all devices.',
+        'Effectively integrated third-party APIs to fetch and display detailed weather reports, showcasing proficiency in working with external data sources.',
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
+    title: "SanityHub",
+    languages: ['Next.js','Tailwind CSS','Typescript','Sanity'],
+    icon: NEXT,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "Dec 2024 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      'Built using modern frameworks like Next.js, Tailwind CSS, TypeScript, and Sanity, demonstrating proficiency in full-stack development with a focus on performance and scalability.',
+      'Implemented a system to store custom theme files securely, leveraging unique login keys to ensure privacy and user-specific access.',
+      'Utilized TypeScript for enhanced code maintainability and reliability, ensuring robust typing for a seamless developer experience.',
+      'Leveraged Sanity as a dynamic CMS to manage and deliver content efficiently, showcasing expertise in headless CMS development.',
     ],
   },
 ];
