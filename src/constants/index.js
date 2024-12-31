@@ -81,10 +81,10 @@ const technologies = [
     name: "React JS",
     icon: reactjs,
   },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
+  // {
+  //   name: "Redux Toolkit",
+  //   icon: redux,
+  // },
   {
     name: "Tailwind CSS",
     icon: tailwind,
@@ -93,25 +93,21 @@ const technologies = [
     name: "Node JS",
     icon: nodejs,
   },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
+  // {
+  //   name: "MongoDB",
+  //   icon: mongodb,
+  // },
+  // {
+  //   name: "Three JS",
+  //   icon: threejs,
+  // },
+  // {
+  //   name: "git",
+  //   icon: git,
+  // },
   {
     name: "figma",
     icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
   },
 ];
 
@@ -199,29 +195,20 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "The website designs and functionality are impressive. It has helped our class projects shine!",
+    name: "Siva",
+    designation: "Student",
+    image: "./person.svg",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "A truly talented developer who has shown exceptional skill in creating websites that meet both educational and professional needs.",
+    name: "Mr.Babu Rao",
+    designation: "Teacher",
+    image: "./person.svg",
   },
 ];
+
 
 const projects = [
   {
