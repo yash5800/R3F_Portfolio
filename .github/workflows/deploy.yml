@@ -21,6 +21,10 @@ jobs:
         uses: bahmutov/npm-install@v1
 
       - name: Build project
+        env: # Pass secrets as environment variables
+           VITE_APP_EMAILJS_TEMPLATE_ID: ${{ secrets.VITE_APP_EMAILJS_TEMPLATE_ID }}
+           VITE_APP_EMAILJS_SERVICE_ID: ${{ secrets.VITE_APP_EMAILJS_SERVICE_ID }}
+           VITE_APP_EMAILJS_PUBLIC_KEY: ${{ secrets.VITE_APP_EMAILJS_PUBLIC_KEY }}
         run: npm run build
 
       - name: Upload production-ready build files
