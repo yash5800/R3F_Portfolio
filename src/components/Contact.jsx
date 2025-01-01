@@ -1,13 +1,4 @@
 /* eslint-disable react-refresh/only-export-components */
-const templateId = import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID;
-const serviceId = import.meta.env.VITE_APP_EMAILJS_SERVICE_ID;
-const publicKey = import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY;
-
-console.log('Template ID:', templateId);
-console.log('Service ID:', serviceId);
-console.log('Public Key:', publicKey);
-
-
 import {useState,useRef} from 'react'
 import {motion} from 'framer-motion'
 import emailjs from '@emailjs/browser'
@@ -40,20 +31,24 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
+    if(form.email===""||form.name===""||form.message===""){
+      alert('Please Fill the Fields');
+      setLoading(false);
+      return null;
+      
+    }
+
     emailjs
       .send(
-        // "service_09ov41i",
-        // "template_auqqgeg",
         import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
-          from_name: form.name,
+          from_name: form.name.trim(),
           to_name: "yash",
-          from_email: form.email,
+          from_email: form.email.trim(),
           to_email: "yaswanthjk580@gmail.com",
-          message: form.message,
+          message: form.message.trim(),
         },
-        // "jyq-_1dlibpxcUubu"
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
       )
       .then(
